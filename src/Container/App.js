@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import classes from "./App.css";
 import Persons from "../Components/Persons/Persons";
-
+import Cockpit from "../Components/Cockpit/Cockpit";
 class App extends Component {
   state = {
     persons: [
@@ -68,11 +68,7 @@ class App extends Component {
 
     return (
       <div className={classes.App}>
-        {/* <h1>Hi, I'm a React App</h1>
-        <p className={assignedClasses.join(" ")}>This is really working!</p>
-        <button className={btnClass} onClick={this.togglePersonsHandler}>
-          Toggle Persons
-        </button> */}
+        <Cockpit />
         {persons}
       </div>
     );
