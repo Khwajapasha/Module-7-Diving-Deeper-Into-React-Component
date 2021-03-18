@@ -58,17 +58,13 @@ class App extends Component {
       );
     }
 
-    // const assignedClasses = [];
-    // if (this.state.persons.length <= 2) {
-    //   assignedClasses.push(classes.red); // classes = ['red']
-    // }
-    // if (this.state.persons.length <= 1) {
-    //   assignedClasses.push(classes.bold); // classes = ['red', 'bold']
-    // }
-
     return (
       <div className={classes.App}>
-        <Cockpit />
+        <Cockpit
+          showPerson={this.state.showPerson}
+          persons={this.state.persons}
+          clicked={this.state.togglePersonsHandler}
+        />
         {persons}
       </div>
     );
