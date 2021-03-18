@@ -1,5 +1,5 @@
 import React from "react";
-import person from "./Person/Person";
+import Person from "./Person/Person";
 const Persons = (props) => {
   return (
     <div>
@@ -7,11 +7,11 @@ const Persons = (props) => {
       {props.persons.map((person, index) => {
         return (
           <Person
-            click={() => this.deletePersonHandler(index)}
+            click={() => props.deletePersonHandler(index)}
             name={person.name}
             age={person.age}
             key={person.id}
-            changed={(event) => this.nameChangedHandler(event, person.id)}
+            changed={(event) => props.nameChangedHandler(event, person.id)}
           />
         );
       })}
