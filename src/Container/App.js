@@ -52,7 +52,11 @@ class App extends Component {
     if (this.state.showPersons) {
       persons = (
         <div>
-          <Persons />
+          <Persons
+            persons={this.state.persons}
+            clicked={this.deletePersonHandler}
+            changed={this.nameChangedHandler}
+          />
           {/* {this.state.persons.map((person, index) => {
             return (
               <Person

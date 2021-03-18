@@ -7,7 +7,7 @@ const Persons = (props) => {
       {props.persons.map((person, index) => {
         return (
           <Person
-            click={() => props.cliked(index)}
+            click={() => props.clicked(index)}
             name={person.name}
             age={person.age}
             key={person.id}
