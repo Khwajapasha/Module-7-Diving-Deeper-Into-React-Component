@@ -22,8 +22,8 @@ class Persons extends Component {
     console.log(Snapshot);
   }
 
-  componentWillReceiveProps() {
-    console.log("{Persons.jsx} componentWillReceiveProps");
+  componentWillReceiveProps(props) {
+    console.log("{Persons.jsx} componentWillReceiveProps", props);
   }
   render() {
     console.log("[Person.js] rendering...");
