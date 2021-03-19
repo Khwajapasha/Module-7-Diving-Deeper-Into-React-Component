@@ -29,6 +29,10 @@ class App extends Component {
   // componentWillUnmount() {
   //   console.log("[App.js] componentDidMount>>>>>==>>");
   // }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    console.log("[App.jsss] shouldComponentUpdate");
+  }
   componentDidUpdate() {
     console.log("[App.jssss] componentDidUpdate");
   }
