@@ -22,9 +22,9 @@ class Persons extends Component {
     console.log(Snapshot);
   }
 
-  componentWillReceiveProps(props) {
-    console.log("{Persons.jsx} componentWillReceiveProps", props);
-  }
+  // componentWillReceiveProps(props) {
+  //   console.log("{Persons.jsx} componentWillReceiveProps", props);
+  // } Removed by react not supported now
   render() {
     console.log("[Person.js] rendering...");
     return (
