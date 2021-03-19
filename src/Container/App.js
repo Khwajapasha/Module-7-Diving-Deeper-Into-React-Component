@@ -29,7 +29,9 @@ class App extends Component {
   // componentWillUnmount() {
   //   console.log("[App.js] componentDidMount>>>>>==>>");
   // }
-
+  componentDidUpdate() {
+    console.log("[App.jssss] componentDidUpdate");
+  }
   nameChangedHandler = (event, id) => {
     const personIndex = this.state.persons.findIndex((p) => {
       return p.id === id;
