@@ -1,7 +1,7 @@
-import React from "react";
+import React,{Component} from "react";
 import Person from "./Person/Person";
 
-const Persons = (props) => {
+class Persons extends Component {
   console.log("[Person.js] rendering...");
   return (
     <div>
