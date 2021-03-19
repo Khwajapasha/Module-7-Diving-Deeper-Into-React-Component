@@ -23,7 +23,7 @@ class Persons extends Component {
   }
 
   componentWillReceiveProps() {
-    console.log("{Persons.jsx}");
+    console.log("{Persons.jsx} componentWillReceiveProps");
   }
   render() {
     console.log("[Person.js] rendering...");
