@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import Person from "./Person/Person";
 
 class Persons extends Component {
+  getDerivedStateFromProps() {
+    console.log("{Persons.js} getDerivedStateFromProps");
+  }
   render() {
     console.log("[Person.js] rendering...");
     return (
