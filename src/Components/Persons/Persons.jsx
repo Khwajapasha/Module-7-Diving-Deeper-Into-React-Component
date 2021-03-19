@@ -2,8 +2,14 @@ import React, { Component } from "react";
 import Person from "./Person/Person";
 
 class Persons extends Component {
-  getDerivedStateFromProps() {
+  getDerivedStateFromProps(props, state) {
     console.log("{Persons.js} getDerivedStateFromProps");
+    return state;
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    console.log("{Persons.js} shouldComponentUpdate ");
+    return true;
   }
   render() {
     console.log("[Person.js] rendering...");
