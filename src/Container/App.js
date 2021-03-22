@@ -32,6 +32,7 @@ class App extends Component {
 
   shouldComponentUpdate(nextProps, nextState) {
     console.log("[App.jsss] shouldComponentUpdate");
+    return true;
   }
   componentDidUpdate() {
     console.log("[App.jssss] componentDidUpdate");
