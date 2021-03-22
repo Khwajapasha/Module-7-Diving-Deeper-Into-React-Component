@@ -3,6 +3,9 @@ import classes from "./Cockpit.css";
 const Cockpit = (props) => {
   useEffect(() => {
     console.log("[Cockpit.jsx] useEffect");
+    setTimeout(() => {
+      alert("This an example of sending request");
+    }, 1000); // 1000 mili Sec is equal to 1sec
   });
 
   let btnClass = "";
