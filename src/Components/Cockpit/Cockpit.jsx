@@ -6,7 +6,7 @@ const Cockpit = (props) => {
     setTimeout(() => {
       alert("This an example of sending request");
     }, 1000); // 1000 mili Sec is equal to 1sec
-  }, [props.persons]);
+  }, [props.persons]); // this useEffect will execute only persons component changed
 
   let btnClass = "";
   if (props.showPerson) {
