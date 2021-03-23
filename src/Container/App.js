@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import classes from "./App.css";
 import Persons from "../Components/Persons/Persons";
 import Cockpit from "../Components/Cockpit/Cockpit";
+import { UploadImage } from "../Components/UploadImage/UploadImage";
 class App extends Component {
   constructor(props) {
     super(props);
@@ -83,14 +84,19 @@ class App extends Component {
     }
 
     return (
-      <div className={classes.App}>
-        <Cockpit
-          title={this.props.appTitle}
-          showPerson={this.state.showPerson}
-          persons={this.state.persons}
-          clicked={this.togglePersonsHandler}
-        />
-        {persons}
+      <div>
+        <div className={classes.App}>
+          <Cockpit
+            title={this.props.appTitle}
+            showPerson={this.state.showPerson}
+            persons={this.state.persons}
+            clicked={this.togglePersonsHandler}
+          />
+          {persons}
+        </div>
+        <div>
+          <UploadImage />
+        </div>
       </div>
     );
     // return React.createElement('div', {className: 'App'}, React.createElement('h1', null, 'Does this work now?'));
