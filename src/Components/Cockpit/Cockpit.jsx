@@ -10,7 +10,8 @@ const Cockpit = (props) => {
     return () => {
       console.log("{Cockpit.jsx} cleanUp work in useEffect");
     };
-  }); // this useEffect will execute only persons component changed
+    // }, [props.persons]); this useEffect will execute only persons component changed
+  }, []); // this useEffect will execute only first time when component get rendered
 
   let btnClass = "";
   if (props.showPerson) {
