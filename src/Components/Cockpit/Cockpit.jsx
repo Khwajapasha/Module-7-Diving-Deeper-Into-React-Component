@@ -8,9 +8,9 @@ const Cockpit = (props) => {
     }, 1000); // 1000 mili Sec is equal to 1sec
 
     return () => {
-      console.log("{Cockpit.jsx} cleanUp work");
+      console.log("{Cockpit.jsx} cleanUp work in useEffect");
     };
-  }, [props.persons]); // this useEffect will execute only persons component changed
+  }); // this useEffect will execute only persons component changed
 
   let btnClass = "";
   if (props.showPerson) {
