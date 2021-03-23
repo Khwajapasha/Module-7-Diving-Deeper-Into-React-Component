@@ -25,9 +25,10 @@ class Persons extends Component {
   // componentWillReceiveProps(props) {
   //   console.log("{Persons.jsx} componentWillReceiveProps", props);
   // } Removed by react not supported now
+
   componentWillUnmount() {
     // it is used fro clean up in class absed component
-    console.log("[Persons.jsx] clean up work componentWillUnmount");
+    console.log("[Persons.jsx] clean up work componentWillUnmount"); // it execute just before component get removed Or unmount
   }
 
   render() {
