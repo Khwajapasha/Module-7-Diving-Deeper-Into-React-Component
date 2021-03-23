@@ -13,6 +13,13 @@ const Cockpit = (props) => {
     // }, [props.persons]); this useEffect will execute only persons component changed
   }, []); // this useEffect will execute only first time when component get rendered
 
+  useEffect(() => {
+    console.log("[Cockpit.jsx] 2nd useEffect");
+    return () => {
+      console.log("{Cockpit.jsx}  2nd cleanUp work in useEffect");
+    };
+  });
+
   let btnClass = "";
   if (props.showPerson) {
     btnClass = classes.Red;
