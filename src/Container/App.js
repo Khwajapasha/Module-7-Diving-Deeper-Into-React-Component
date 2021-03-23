@@ -20,25 +20,6 @@ class App extends Component {
     };
   }
 
-  static getDerivedStateFromProps(props, state) {
-    console.log("[App.js] getDerivedStateFromProps ", props);
-    return state;
-  }
-
-  componentDidMount() {
-    console.log("[App.js] componentDidMount");
-  }
-  // componentWillUnmount() {
-  //   console.log("[App.js] componentDidMount>>>>>==>>");
-  // }
-
-  shouldComponentUpdate(nextProps, nextState) {
-    console.log("[App.jsss] shouldComponentUpdate");
-    return true;
-  }
-  componentDidUpdate() {
-    console.log("[App.jssss] componentDidUpdate");
-  }
   nameChangedHandler = (event, id) => {
     const personIndex = this.state.persons.findIndex((p) => {
       return p.id === id;
@@ -69,6 +50,25 @@ class App extends Component {
     const doesShow = this.state.showPersons;
     this.setState({ showPersons: !doesShow });
   };
+  static getDerivedStateFromProps(props, state) {
+    console.log("[App.js] getDerivedStateFromProps ", props);
+    return state;
+  }
+
+  componentDidMount() {
+    console.log("[App.js] componentDidMount");
+  }
+  // componentWillUnmount() {
+  //   console.log("[App.js] componentDidMount>>>>>==>>");
+  // }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    console.log("[App.jsss] shouldComponentUpdate");
+    return true;
+  }
+  componentDidUpdate() {
+    console.log("[App.jssss] componentDidUpdate");
+  }
 
   render() {
     console.log("[App.js] render()");
