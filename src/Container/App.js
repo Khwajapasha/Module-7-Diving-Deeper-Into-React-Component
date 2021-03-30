@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import classes from "./App.css";
 import Persons from "../Components/Persons/Persons";
 import Cockpit from "../Components/Cockpit/Cockpit";
+import JuditEditor from "../Components/JuditEditor/JuditEditor";
 // import { UploadImage } from "../Components/UploadImage/UploadImage";
 class App extends Component {
   constructor(props) {
@@ -101,9 +102,10 @@ class App extends Component {
           )}
           {persons}
         </div>
-        {/* <div>
-          <UploadImage />
-        </div> */}
+        <div>
+          {/* <UploadImage />*/}
+          <JuditEditor />
+        </div>
       </div>
     );
     // return React.createElement('div', {className: 'App'}, React.createElement('h1', null, 'Does this work now?'));
