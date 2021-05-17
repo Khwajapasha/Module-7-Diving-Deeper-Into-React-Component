@@ -104,7 +104,7 @@ class App extends Component {
         </div>
         <div>
           {/* <UploadImage />*/}
-          <JuditEditor />
+          {/* <JuditEditor /> */}
         </div>
       </div>
     );
